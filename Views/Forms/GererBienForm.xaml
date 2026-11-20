@@ -1,0 +1,21 @@
+﻿<Page x:Class="GestImmo.Views.Forms.GererBienForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmo.Views.Forms"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="390"
+      Title="GererBienForm">
+
+    <Grid>
+        <Label Content="Ajouter un bien" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Type de bien" HorizontalAlignment="Left" Margin="5,31,0,0" VerticalAlignment="Top"/>
+
+        <ComboBox Name="cbxAddBienForm" Margin="93,31,10,0" SelectionChanged="cbxAddBienForm_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246">
+            <ComboBoxItem>Maison</ComboBoxItem>
+            <ComboBoxItem>Appartement</ComboBoxItem>
+            <ComboBoxItem>Box</ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Page>
