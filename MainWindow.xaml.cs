@@ -19,6 +19,7 @@ namespace GestImmo
         public MainWindow()
         {
             InitializeComponent();
+            this.Content = new Views.NavigationView();
         }
     }
 }
