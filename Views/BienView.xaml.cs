@@ -21,6 +21,8 @@ namespace GestImmo.Views
         public BienView()
         {
             InitializeComponent();
+            this.LeftFrame.Navigate(new SubViews.ListBienView());
+            this.RightFrame.Navigate(new Forms.GererBienForm());
         }
     }
 }

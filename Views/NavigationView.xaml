@@ -15,6 +15,6 @@
         <Button Content="Prets" Margin="226,10,0,0" HorizontalAlignment="Left" Padding="10,10,10,10" VerticalAlignment="Top" Click="btnPret_Click"/>
 
 
-        <Frame Name="MainFrame" Content="Frame" NavigationUIVisibility="Hidden" Margin="10,59,10,10"/>
+        <Frame Name="MainFrame" Content="Frame" NavigationUIVisibility="Hidden" Margin="10,60,10,10"/>
     </Grid>
 </Page>

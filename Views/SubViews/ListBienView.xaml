@@ -1,0 +1,23 @@
+﻿<Page x:Class="GestImmo.Views.SubViews.ListBienView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmo.Views.SubViews"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="390"
+      Title="ListBienView">
+
+    <Grid>
+        <Label Content="Mes biens" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <ListView x:Name="lstBiens" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,26,0,0" SelectionChanged="lstBiens_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Nom}"/>
+                    <GridViewColumn Header="Surface" DisplayMemberBinding="{Binding Surface}"/>
+                    <GridViewColumn Header="Valeur" DisplayMemberBinding="{Binding Valeur}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>
