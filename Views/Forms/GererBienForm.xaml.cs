@@ -21,14 +21,22 @@ namespace GestImmo.Views.Forms
         public GererBienForm()
         {
             InitializeComponent();
+            cbxAddBienForm.SelectedIndex = 0;
         }
 
         private void cbxAddBienForm_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (cbxAddBienForm.SelectedItem is ComboBoxItem item)
+            if (cbxAddBienForm.SelectedIndex == 0)
             {
-                string? typeBien = item.Content?.ToString();
-                // Exemple : afficher ou masquer les champs selon le type de bien
+                this.FormFrame.Navigate(new SubViews.AddMaisonForm());
+            }
+            else if (cbxAddBienForm.SelectedIndex == 1)
+            {
+                this.FormFrame.Navigate(new SubViews.AddAppartementForm());
+            }
+            else if (cbxAddBienForm.SelectedIndex == 2)
+            {
+                this.FormFrame.Navigate(new SubViews.AddBoxForm());
             }
         }
     }

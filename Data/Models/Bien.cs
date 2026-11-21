@@ -15,9 +15,9 @@ namespace GestImmo.Data.Models
 
 
         // Relations
-        public List<Pret?> Prets { get; set; }
-        public List<Bail?> Baux { get; set; }
-        public List<Intervention?> Interventions { get; set; }
+        public List<Pret?> Prets { get; set; } = new List<Pret?>();
+        public List<Bail?> Baux { get; set; } = new List<Bail?>();
+        public List<Intervention?> Interventions { get; set; } = new List<Intervention?>();
 
 
         // Constructeur
