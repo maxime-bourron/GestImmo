@@ -18,6 +18,6 @@
             <ComboBoxItem>Box</ComboBoxItem>
         </ComboBox>
 
-        <Frame Name="FormFrame" Content="Frame" Margin="10,62,10,10"/>
+        <Frame Name="FormFrame" Content="Frame" Margin="10,62,10,0"/>
     </Grid>
 </Page>

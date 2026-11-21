@@ -9,6 +9,24 @@
       Title="AddMaisonForm">
 
     <Grid>
-        <Label Content="Ajouter une maison" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Nom :" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Valeur :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,31,0,0"/>
+        <Label Content="Adresse :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,62,0,0"/>
+        <Label Content="Surface :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,93,0,0"/>
+        <Label Content="Nombre de pièces :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,124,0,0"/>
+        <Label Content="Nombre de chambres :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,155,0,0"/>
+        <Label Content="Nombre de caves :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,186,0,0"/>
+        <Label Content="Nombre de parkings :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,217,0,0"/>
+
+        <TextBox Name="txtNom" TextWrapping="Wrap" VerticalAlignment="Top" Margin="69,4,0,0"/>
+        <TextBox Name="txtValeur" TextWrapping="Wrap" VerticalAlignment="Top" Margin="71,35,0,0"/>
+        <TextBox Name="txtAdresse" TextWrapping="Wrap" VerticalAlignment="Top" Margin="71,66,0,0"/>
+        <TextBox Name="txtSurface" TextWrapping="Wrap" VerticalAlignment="Top" Margin="71,97,0,0"/>
+        <TextBox Name="txtNbrPiece" TextWrapping="Wrap" VerticalAlignment="Top" Margin="136,128,0,0"/>
+        <TextBox Name="txtNbrChambre" TextWrapping="Wrap" VerticalAlignment="Top" Margin="136,159,0,0"/>
+        <TextBox Name="txtNbrCave" TextWrapping="Wrap" VerticalAlignment="Top" Margin="136,190,0,0"/>
+        <TextBox Name="txtNbrParking" TextWrapping="Wrap" VerticalAlignment="Top" Margin="136,221,0,0"/>
+
+        <Button Name="btnAddMaison" Content="Ajouter" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Click="btnAddMaison_Click" RenderTransformOrigin="0.453,2.605"/>
     </Grid>
 </Page>
